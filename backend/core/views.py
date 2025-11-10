@@ -5,6 +5,9 @@ from .models import Event, Movie, MenuItem, Info
 import json
 from datetime import date
 
+
+#================= Movie Views =================#
+
 def movie_list(request):
     """Список всіх фільмів"""
     movies = Movie.objects.filter(is_visible=True)
@@ -117,3 +120,70 @@ def movie_by_title(request, title):
         'count': len(movies_data),
         'movies': movies_data
         })
+
+#================= Menu Views =================#
+
+def menu_list(request):
+    """Список всього меню"""
+    menu_items = MenuItem.objects.all()
+    menu_data = []
+    for item in menu_items:
+        menu_data.append({
+            'id': item.id,
+            'name': item.name,
+            'category': item.category,
+            'subcategory': item.subcategory,
+            'description': item.description,
+            'price': item.price,
+            'image': item.image.url if item.image else None,
+        })
+    return JsonResponse({
+        'count': len(menu_data),
+        'menu': menu_data
+        })
+
+def menu_categories(request):
+    """Список унікальних категорій меню"""
+    categories = MenuItem.objects.values_list('category', flat=True).distinct()
+    return JsonResponse({
+        'categories': list(categories)
+        })
+
+def menu_by_category(request, category):
+    """Список пунктів меню за категорією"""
+    menu_items = MenuItem.objects.filter(category__iexact=category)
+    menu_data = []
+    for item in menu_items:
+        menu_data.append({
+            'id': item.id,
+            'name': item.name,
+            'category': item.category,
+            'subcategory': item.subcategory,
+            'description': item.description,
+            'price': item.price,
+            'image': item.image.url if item.image else None,
+        })
+    return JsonResponse({
+        'count': len(menu_data),
+        'menu': menu_data
+        })
+
+def menu_by_subcategory(request, category, subcategory):
+    """Список пунктів меню за підкатегорією"""
+    menu_items = MenuItem.objects.filter(category__iexact=category, subcategory__iexact=subcategory)
+    menu_data = []
+    for item in menu_items:
+        menu_data.append({
+            'id': item.id,
+            'name': item.name,
+            'category': item.category,
+            'subcategory': item.subcategory,
+            'description': item.description,
+            'price': item.price,
+            'image': item.image.url if item.image else None,
+        })
+    return JsonResponse({
+        'count': len(menu_data),
+        'menu': menu_data
+        })
+

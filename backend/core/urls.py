@@ -18,4 +18,13 @@ urlpatterns = [
     path('menu/categories/', views.menu_categories, name='menu-categories'), # Список категорій
     path('menu/<str:category>/', views.menu_by_category, name='menu-category'), # По категорії
     path('menu/<str:category>/<str:subcategory>/', views.menu_by_subcategory, name='menu-subcategory'), # По підкатегорії
+
+    # Події
+    path('events/', views.event_list, name='event-list'),
+    path('events/<int:pk>/', views.event_detail, name='event-detail'),
+    path('events/upcoming/', views.upcoming_events, name='upcoming-events'),
+
+    # Загальна інформація
+    path('info/', views.info_list, name='info-list'),
+
 ]

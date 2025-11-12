@@ -187,3 +187,81 @@ def menu_by_subcategory(request, category, subcategory):
         'menu': menu_data
         })
 
+#================= Event Views =================#
+
+def event_list(request):
+    """Список усіх подій"""
+    events = Event.objects.filter(is_published=True).order_by('-date')
+    events_data = []
+    for e in events:
+        events_data.append({
+            'id': e.id,
+            'title': e.title,
+            'description': e.description,
+            'date': e.date.isoformat(),
+            'time': e.time.isoformat() if e.time else None,
+            'location': e.location,
+            'image': e.image.url if e.image else None,
+        })
+    return JsonResponse({
+        'count': len(events_data),
+        'events': events_data
+    })
+
+
+def event_detail(request, pk):
+    """Деталі конкретної події"""
+    event = get_object_or_404(Event, pk=pk, is_published=True)
+    event_data = {
+        'id': event.id,
+        'title': event.title,
+        'description': event.description,
+        'date': event.date.isoformat(),
+        'time': event.time.isoformat() if event.time else None,
+        'location': event.location,
+        'image': event.image.url if event.image else None,
+    }
+    return JsonResponse(event_data)
+
+
+def upcoming_events(request):
+    """Майбутні події"""
+    today = date.today()
+    events = Event.objects.filter(date__gte=today, is_published=True).order_by('date', 'time')
+    events_data = []
+    for e in events:
+        events_data.append({
+            'id': e.id,
+            'title': e.title,
+            'description': e.description,
+            'date': e.date.isoformat(),
+            'time': e.time.isoformat() if e.time else None,
+            'location': e.location,
+            'image': e.image.url if e.image else None,
+        })
+    return JsonResponse({
+        'count': len(events_data),
+        'events': events_data
+    })
+
+#================= Info Views =================#
+
+def info_list(request):
+    """Список усіх записів про організацію"""
+    infos = Info.objects.filter(is_published=True)
+    infos_data = []
+    for info in infos:
+        infos_data.append({
+            'id': info.id,
+            'title': info.title,
+            'description': info.description,
+            'address': info.address,
+            'phone': info.phone,
+            'email': info.email,
+            'instagram': info.instagram,
+            'image': info.image.url if info.image else None,
+        })
+    return JsonResponse({
+        'count': len(infos_data),
+        'info': infos_data
+    })

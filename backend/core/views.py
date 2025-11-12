@@ -135,7 +135,6 @@ def menu_list(request):
             'subcategory': item.subcategory,
             'description': item.description,
             'price': item.price,
-            'image': item.image.url if item.image else None,
         })
     return JsonResponse({
         'count': len(menu_data),

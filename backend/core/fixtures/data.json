@@ -1,0 +1,679 @@
+[
+{
+  "model": "core.event",
+  "pk": 1,
+  "fields": {
+    "title": "Мафія",
+    "description": "Запрошуємо тебе зануритися у світ інтриг, хитрих комбінацій та гострих відчуттів!\r\nХто ж вийде переможцем цього разу — мафія чи мирні жителі?",
+    "date": "2025-09-28",
+    "time": "18:00:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/mafia.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 2,
+  "fields": {
+    "title": "Матч Премʼєр-ліги",
+    "description": "Матч Премʼєр-ліги – Манчестер Сіті VS Арсенал.\r\nФутбольний вечір у компанії справжніх фанів!",
+    "date": "2025-09-21",
+    "time": "18:30:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/football1.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 3,
+  "fields": {
+    "title": "Формула-1 – Трансляція перегонів",
+    "description": "Запрошуємо всіх фанатів швидкості та драйву разом подивитися гонку Формули-1 у затишній атмосфері!",
+    "date": "2025-09-21",
+    "time": "13:45:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/formula1.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 4,
+  "fields": {
+    "title": "Арт-практика у світі Гаррі Поттера",
+    "description": "Запрошуємо зануритися у магію творчості та створити власний малюнок у стилі чарівного всесвіту Гаррі Поттера!",
+    "date": "2025-09-21",
+    "time": "16:00:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/art.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 5,
+  "fields": {
+    "title": "Вечір біля моря",
+    "description": "Вечір біля моря - це спогад про дім, який буде світитися в серці завжди.\r\nМісто Бердянськ окуповане росією з 2022 року.\r\nАле поки є місце для зустрічі та історій людей, для яких він завжди буде домом - доти буде український Бердянськ.\r\nМи поспілкуємось з корінними мешканцями міста, разом намалюємо море, загадаємо мрії на майбутнє, поїмо бердянські смаколики та заспіваємо біля ватри.\r\nНу що, побачимось біля моря?",
+    "date": "2025-09-17",
+    "time": "18:00:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/ev_sea.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 6,
+  "fields": {
+    "title": "Благодійна Ватра",
+    "description": "Запрошуємо на Благодійну Ватру!\r\nБуде тепло, щиро й по-дружньому — співатимемо разом пісень під гітару та смакуватимемо запашними зефірками біля вогню.\r\nПриходьте з друзями — разом створимо атмосферу справжнього затишку та добра.",
+    "date": "2025-08-24",
+    "time": "19:30:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/vatra.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 7,
+  "fields": {
+    "title": "Drum&Bass Sunset у Львові",
+    "description": "Лови момент!\r\nЦього вечора для вас буде огортаюча і басовита саунд система, улюблений драм-н-бейс на вінілі і не тільки, приємне спілкування.",
+    "date": "2025-11-15",
+    "time": "16:00:00",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "image": "events/drum.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 8,
+  "fields": {
+    "title": "Аудіо-візуальна подія від Garmonia room",
+    "description": "Музика, мистецтво, смачна кухня, Jäger бар, багаття, різні активності, візуальна краса і все це просто неба.",
+    "date": "2025-11-20",
+    "time": "21:00:00",
+    "location": "парк культури ім Б.Хмельницького",
+    "image": "events/audio.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.event",
+  "pk": 9,
+  "fields": {
+    "title": "Словолюби",
+    "description": "“Словолюби” проведуть благодійний вечір, тебе запрошено і чотирилапого бери!",
+    "date": "2025-11-28",
+    "time": "16:00:00",
+    "location": "парк культури ім Б.Хмельницького",
+    "image": "events/wordlove.png",
+    "is_published": true
+  }
+},
+{
+  "model": "core.info",
+  "pk": 1,
+  "fields": {
+    "title": "Простір Львів",
+    "description": "Затишний простір для подій, фільмів і кави. Усі прибутки йдуть на потреби військових.",
+    "address": "м. Львів, вул. Лижв'ярська, 42",
+    "phone": "+380638726395",
+    "email": "prostirlvivpark@gmail.com",
+    "instagram": "https://instagram.com/prostirlviv",
+    "image": "info/logo_prostir.jpg",
+    "is_published": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 1,
+  "fields": {
+    "title": "Стажер",
+    "date": "2025-10-23",
+    "time": "19:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/trainee.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 2,
+  "fields": {
+    "title": "Еверест",
+    "date": "2025-11-22",
+    "time": "19:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/everest.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 3,
+  "fields": {
+    "title": "Диявол носить Прада",
+    "date": "2025-11-30",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/prada.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 4,
+  "fields": {
+    "title": "Гаррі Поттер і напівкровний принц",
+    "date": "2025-12-02",
+    "time": "19:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/harrypotter1.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 5,
+  "fields": {
+    "title": "Гаррі Поттер та ордер Фенікса",
+    "date": "2025-11-26",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/harrypoter2.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 6,
+  "fields": {
+    "title": "Знайомтесь — Джо Блек",
+    "date": "2025-11-24",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/djo_black.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 7,
+  "fields": {
+    "title": "Піаніст",
+    "date": "2025-12-11",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/pianist.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 8,
+  "fields": {
+    "title": "Мандрівний замок Хаула",
+    "date": "2025-11-18",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/castle_haul.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 9,
+  "fields": {
+    "title": "Хрещений Батько",
+    "date": "2025-11-19",
+    "time": "19:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/godfather.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 10,
+  "fields": {
+    "title": "Потік. Останній кіт на Землі",
+    "date": "2025-11-27",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/potik.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 11,
+  "fields": {
+    "title": "Острів Проклятих",
+    "date": "2025-12-08",
+    "time": "19:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/ostriv.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 12,
+  "fields": {
+    "title": "101 далматинець",
+    "date": "2025-11-11",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/101dalmtn.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 13,
+  "fields": {
+    "title": "Ліло і Стіч",
+    "date": "2025-11-18",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/lilo_stich.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 14,
+  "fields": {
+    "title": "Втеча з Шоушенка",
+    "date": "2025-11-16",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/shoushenk.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 15,
+  "fields": {
+    "title": "Пірати Карибського моря",
+    "date": "2025-09-01",
+    "time": "20:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/pirats.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 16,
+  "fields": {
+    "title": "Додому",
+    "date": "2025-11-29",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/tohome.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 17,
+  "fields": {
+    "title": "Чемпіон",
+    "date": "2025-11-17",
+    "time": "18:00:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/champion.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.movie",
+  "pk": 18,
+  "fields": {
+    "title": "Шоу Трумена",
+    "date": "2025-11-11",
+    "time": "18:30:00",
+    "description": "Перегляд фільму - обовʼязковий донат на наш збір!\r\nЗадонатити можна в скриньку біля бару або ж по qr-коду на екрані.",
+    "image": "movies/trumen.png",
+    "location": "вул. Лижв’яpська, 42 — Простір",
+    "is_visible": true
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 1,
+  "fields": {
+    "category": "food",
+    "subcategory": "Сендвічі",
+    "name": "Сендвіч Chiken + фрі",
+    "description": "Тостовий хліб, курка, маринований огірок, помідор, моцарела, чедер",
+    "weight_grams": 350,
+    "volume_ml": null,
+    "price": "250.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 2,
+  "fields": {
+    "category": "food",
+    "subcategory": "Сендвічі",
+    "name": "Сендвіч Cheese + Батат",
+    "description": "Тостовий хліб, медовий соус, груша, дор-блю, моцарела",
+    "weight_grams": 330,
+    "volume_ml": null,
+    "price": "320.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 3,
+  "fields": {
+    "category": "food",
+    "subcategory": "Сендвічі",
+    "name": "Сендвіч BLT + фрі",
+    "description": "Тостовий хліб, яйце, бекон, мариновані огірки, моцарела",
+    "weight_grams": 340,
+    "volume_ml": null,
+    "price": "250.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 4,
+  "fields": {
+    "category": "food",
+    "subcategory": "Фрі",
+    "name": "Фрі Сирна",
+    "description": "Крафтовий сирний соус, кукурудза, цибулевий крaнч, пармезан",
+    "weight_grams": 400,
+    "volume_ml": null,
+    "price": "250.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 5,
+  "fields": {
+    "category": "food",
+    "subcategory": "Фрі",
+    "name": "Фрі BBQ",
+    "description": "Соус BBQ, майонез, беконовий крaнч, зелена цибуля, паприка",
+    "weight_grams": 400,
+    "volume_ml": null,
+    "price": "200.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 6,
+  "fields": {
+    "category": "food",
+    "subcategory": "Закуски",
+    "name": "Бокс Закусок",
+    "description": "Нагетси, цибулеві кільця, картопляні кульки",
+    "weight_grams": 300,
+    "volume_ml": null,
+    "price": "210.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 7,
+  "fields": {
+    "category": "food",
+    "subcategory": "Фрі",
+    "name": "Батат Фрі",
+    "description": "Запечений батат із соусом",
+    "weight_grams": 200,
+    "volume_ml": null,
+    "price": "180.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 8,
+  "fields": {
+    "category": "food",
+    "subcategory": "Фрі",
+    "name": "Фрі Класік",
+    "description": "Класична картопля фрі",
+    "weight_grams": 200,
+    "volume_ml": null,
+    "price": "90.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 9,
+  "fields": {
+    "category": "food",
+    "subcategory": "Закуски",
+    "name": "Картопляні Кульки",
+    "description": "Золотисті картопляні кульки",
+    "weight_grams": 200,
+    "volume_ml": null,
+    "price": "105.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 10,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Еспресо",
+    "description": "Класичний міцний напій з насиченим ароматом",
+    "weight_grams": null,
+    "volume_ml": 60,
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 11,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Допіо",
+    "description": "Подвійний еспресо для справжніх поціновувачів",
+    "weight_grams": null,
+    "volume_ml": 80,
+    "price": "70.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 12,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Капучино",
+    "description": "Кава з густою молочною пінкою",
+    "weight_grams": null,
+    "volume_ml": 250,
+    "price": "85.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 13,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Лате",
+    "description": "Молочна кава з ніжною піною",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "100.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 14,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Флет вайт",
+    "description": "Міцна кава з насиченим смаком і тонкою молочною пінкою",
+    "weight_grams": null,
+    "volume_ml": 250,
+    "price": "90.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 15,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Американо",
+    "description": "Класична чорна кава середньої міцності",
+    "weight_grams": null,
+    "volume_ml": 250,
+    "price": "65.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 16,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Арахісове лате",
+    "description": "Лате з горіховим сиропом і арахісовими нотками",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "110.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 17,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Кава",
+    "name": "Какао",
+    "description": "Гарячий напій з натурального какао",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "70.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 18,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Чай",
+    "name": "Чай",
+    "description": "Асортимент чорного, зеленого або трав’яного чаю",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "65.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 19,
+  "fields": {
+    "category": "drink",
+    "subcategory": "ICE",
+    "name": "Ice лате",
+    "description": "Охолоджене лате з кубиками льоду",
+    "weight_grams": null,
+    "volume_ml": 350,
+    "price": "110.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 20,
+  "fields": {
+    "category": "drink",
+    "subcategory": "ICE",
+    "name": "Еспресо-тонік",
+    "description": "Еспресо з тоніком, освіжаючий напій",
+    "weight_grams": null,
+    "volume_ml": 350,
+    "price": "110.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 21,
+  "fields": {
+    "category": "drink",
+    "subcategory": "ICE",
+    "name": "Капуорандж",
+    "description": "Капучино з апельсиновим соком і льодом",
+    "weight_grams": null,
+    "volume_ml": 350,
+    "price": "110.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 22,
+  "fields": {
+    "category": "drink",
+    "subcategory": "ICE",
+    "name": "Ice какао",
+    "description": "Охолоджене какао з льодом",
+    "weight_grams": null,
+    "volume_ml": 350,
+    "price": "100.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 23,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Лимонад",
+    "name": "Лимонад апельсиновий",
+    "description": "Домашній лимонад зі свіжих апельсинів",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "120.00"
+  }
+},
+{
+  "model": "core.menuitem",
+  "pk": 24,
+  "fields": {
+    "category": "drink",
+    "subcategory": "Лимонад",
+    "name": "Лимонад лимонний",
+    "description": "Домашній лимонад зі свіжих лимонів",
+    "weight_grams": null,
+    "volume_ml": 300,
+    "price": "120.00"
+  }
+}
+]

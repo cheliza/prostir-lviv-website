@@ -1,4 +1,6 @@
 from django.db import models
+import cloudinary
+import cloudinary.models
 
 class Event(models.Model):
     title = models.CharField(max_length=200, verbose_name="Назва події")
@@ -41,7 +43,13 @@ class Movie(models.Model):
     date = models.DateField(verbose_name="Дата показу")
     time = models.TimeField(blank=True, null=True, verbose_name="Час початку показу")
     description = models.TextField(verbose_name="Опис", blank=True, null=True)
-    image = models.ImageField(upload_to='movies/', verbose_name="Постер", blank=True, null=True)
+    image = cloudinary.models.CloudinaryField(
+        'image', 
+        folder='prostir/movies', 
+        blank=True, 
+        null=True, 
+        verbose_name="Зображення"
+    )   
     location = models.CharField(max_length=255, verbose_name="Локація", blank=True, null=True)
     is_visible = models.BooleanField(default=True, verbose_name="Показувати на сайті")
 

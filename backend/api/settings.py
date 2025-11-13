@@ -11,7 +11,11 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from pathlib import Path
+from dotenv import load_dotenv 
+import os 
 
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,7 +41,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    
+    # --- CLOUDINARY INTEGRATION (ВИПРАВЛЕНО) ---
+    # Залишаємо тільки cloudinary_storage, щоб уникнути конфлікту міток.
+    'cloudinary_storage',
+    # Якщо ви використовуєте CloudinaryField (як у моделі Movie), 
+    # в деяких випадках може знадобитися окремо 'cloudinary', але
+    # для уникнення ImproperlyConfigured та використання CloudinaryField 
+    # це часто є достатнім. Якщо помилка ImproperlyConfigured повториться,
+    # спробуйте замінити 'cloudinary_storage' на 'cloudinary'.
+    
+    # -------------------------------------------
 ]
 
 MIDDLEWARE = [
@@ -121,3 +136,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# CLOUDINARY SETTINGS 
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+
+CLOUDINARY = {
+    "cloud_name": os.getenv('CLOUDINARY_CLOUD_NAME'),
+    "api_key": os.getenv('CLOUDINARY_API_KEY'),
+    "api_secret": os.getenv('CLOUDINARY_API_SECRET'),
+}
+
+MEDIA_URL = "/media/"
